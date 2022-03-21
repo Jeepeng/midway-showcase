@@ -4,7 +4,7 @@ import { ReturnModelType } from '@typegoose/typegoose';
 import { User } from '../entity/user';
 
 @Provide()
-export class TestService {
+export class UserService {
   @InjectEntityModel(User)
   userModel: ReturnModelType<typeof User>;
 
